@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */; };
-		94E0E7DD2045C21D005BF9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* ViewController.swift */; };
+		94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */; };
 		94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7DE2045C21D005BF9DD /* Main.storyboard */; };
 		94E0E7E22045C21D005BF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E12045C21D005BF9DD /* Assets.xcassets */; };
 		94E0E7E52045C21D005BF9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */; };
+		94E0E7F12045C395005BF9DD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E0E7F02045C395005BF9DD /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94E0E7D72045C21D005BF9DD /* OpenGLAprendiendo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLAprendiendo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94E0E7DC2045C21D005BF9DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGLKViewController.swift; sourceTree = "<group>"; };
 		94E0E7DF2045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E0E7E12045C21D005BF9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E0E7E42045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E0E7E62045C21D005BF9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E0E7F02045C395005BF9DD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E0E7F12045C395005BF9DD /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				94E0E7D92045C21D005BF9DD /* OpenGLAprendiendo-iOS */,
 				94E0E7D82045C21D005BF9DD /* Products */,
+				94E0E7EF2045C394005BF9DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +59,21 @@
 			isa = PBXGroup;
 			children = (
 				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
-				94E0E7DC2045C21D005BF9DD /* ViewController.swift */,
+				94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */,
 				94E0E7DE2045C21D005BF9DD /* Main.storyboard */,
 				94E0E7E12045C21D005BF9DD /* Assets.xcassets */,
 				94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */,
 				94E0E7E62045C21D005BF9DD /* Info.plist */,
 			);
 			path = "OpenGLAprendiendo-iOS";
+			sourceTree = "<group>";
+		};
+		94E0E7EF2045C394005BF9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94E0E7F02045C395005BF9DD /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E0E7DD2045C21D005BF9DD /* ViewController.swift in Sources */,
+				94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */,
 				94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
