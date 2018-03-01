@@ -28,7 +28,8 @@ class BaseEffect {
         glAttachShader(programHandle, vertexShaderName)
         glAttachShader(programHandle, fragmentShaderName)
         
-        glBindAttribLocation(programHandle, GLuint(VertexAttributes.vertextAttribPosition.rawValue), "a_Position")
+        glBindAttribLocation(programHandle, GLuint(VertexAttributes.vertexAttribPosition.rawValue), "a_Position")
+        glBindAttribLocation(programHandle, GLuint(VertexAttributes.vertexAttribColor.rawValue), "a_Color")
         
         glLinkProgram(programHandle)
         
