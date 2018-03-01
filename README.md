@@ -1,6 +1,6 @@
 # OpenGLAprendiendo-iOS
 
-Learning how to draw a triangle using OpenGL on iOS
+Learning how to draw a triangle using OpenGL and GLKit on iOS
 
 ![multi-colored-opengl-triangle](opengl-triangle.png)
 
