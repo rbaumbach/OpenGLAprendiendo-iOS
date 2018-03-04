@@ -3,23 +3,21 @@ import OpenGLES
 class BaseEffect {
     // MARK: - Private Properties
     
-    private var programHandle: GLuint = GLuint()
+    private var programHandle: GLuint = 0
     
     // MARK: - Init Method
     
-    init(vertexShader: String, fragmentShader: String) {
-        compile(vertexShader: vertexShader, fragmentShader: fragmentShader)
-    }
+    init(vertexShader: String, fragmentShader: String, attributes: [VertexAttributes: String]) {
+        compile(vertexShader: vertexShader,
+                fragmentShader: fragmentShader,
+                attributes: attributes)
     
-    // MARK: - Public Method
-    
-    func prepareToDraw() {
         glUseProgram(programHandle)
     }
     
     // MARK: - Private Methods
     
-    private func compile(vertexShader: String, fragmentShader: String) {
+    private func compile(vertexShader: String, fragmentShader: String, attributes: [VertexAttributes: String]) {
         let vertexShaderName = compileShader(name: vertexShader, type: GLenum(GL_VERTEX_SHADER))
         let fragmentShaderName = compileShader(name: fragmentShader, type: GLenum(GL_FRAGMENT_SHADER))
         
@@ -28,23 +26,20 @@ class BaseEffect {
         glAttachShader(programHandle, vertexShaderName)
         glAttachShader(programHandle, fragmentShaderName)
         
-        glBindAttribLocation(programHandle, GLuint(VertexAttributes.vertexAttribPosition.rawValue), "a_Position")
-        glBindAttribLocation(programHandle, GLuint(VertexAttributes.vertexAttribColor.rawValue), "a_Color")
-        
         glLinkProgram(programHandle)
         
-        var shaderLinkProgramSuccess = GLint()
+        var shaderLinkProgramSuccess: GLint = GL_FALSE
         
         glGetProgramiv(programHandle, GLenum(GL_LINK_STATUS), &shaderLinkProgramSuccess)
+        
         if (shaderLinkProgramSuccess == GL_FALSE) {
-            let infoLog = UnsafeMutablePointer<GLchar>.allocate(capacity: 256)
-            var infoLogLength = GLsizei()
-            
-            glGetProgramInfoLog(programHandle, GLsizei(MemoryLayout<GLchar>.size * 256), &infoLogLength, infoLog)
-            
-            print("compile(vertexShader:fragmentShader:).glLinkProgram() failed: \(String(cString:  infoLog))")
+            printErrorLog(message: "compile(vertexShader:fragmentShader:).glLinkProgram() failed")
             
             return
+        }
+        
+        attributes.forEach { attribute, attributeName in
+            glBindAttribLocation(programHandle, GLuint(attribute.rawValue), attributeName)
         }
     }
     
@@ -70,32 +65,38 @@ class BaseEffect {
         }
         
         var shaderStringUTF8 = shaderString!.utf8String
-        var shaderStringLength: GLint = GLint(Int32(shaderString!.length))
         
         let shaderHandle = glCreateShader(type)
         
-        glShaderSource(shaderHandle, 1, &shaderStringUTF8, &shaderStringLength)
+        glShaderSource(shaderHandle, 1, &shaderStringUTF8, nil)
         
         glCompileShader(shaderHandle)
         
-        var shaderCompileSuccess = GLint()
+        var shaderCompileSuccess: GLint = GL_FALSE
         glGetShaderiv(shaderHandle, GLenum(GL_COMPILE_STATUS), &shaderCompileSuccess)
         
         if (shaderCompileSuccess == GL_FALSE) {
-            let infoLog = UnsafeMutablePointer<GLchar>.allocate(capacity: 256)
-            var infoLogLength = GLsizei()
-            
-            glGetShaderInfoLog(shaderHandle, GLsizei(MemoryLayout<GLchar>.size * 256), &infoLogLength, infoLog)
-            
-            print("compileShader.glCompileShader() failed: \(String(cString: infoLog))")
-            
-            infoLog.deallocate(capacity: 256)
+            printErrorLog(message: "compileShader.glCompileShader() failed")
             
             // junk value
-            
+
             return 999
         }
         
         return shaderHandle
+    }
+    
+    private func printErrorLog(message: String) {
+        var logLength: GLint = 0
+        
+        glGetProgramiv(programHandle, GLenum(GL_INFO_LOG_LENGTH), &logLength)
+        
+        let log = UnsafeMutablePointer<GLchar>.allocate(capacity: Int(logLength))
+        
+        glGetProgramInfoLog(programHandle, logLength, nil, log)
+        
+        let logString: NSString = NSString(utf8String: log)!
+        
+        print("\(message): \(logString)")
     }
 }

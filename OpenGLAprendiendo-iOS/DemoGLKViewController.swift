@@ -15,7 +15,7 @@ class DemoGLKViewController: GLKViewController {
                                         0.0, 0.25, 0.0,     0.0, 0.0, 1.0   // top
                                       ]
     
-    private var vertexBuffer = GLuint()
+    private var vertexBuffer: GLuint = 0
     
     private var baseEffect: BaseEffect?
     
@@ -40,8 +40,6 @@ class DemoGLKViewController: GLKViewController {
         glClearColor(0.2, 0.3, 0.3, 1.0)
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
         
-        baseEffect?.prepareToDraw()
-        
         glEnableVertexAttribArray(GLuint(VertexAttributes.vertexAttribPosition.rawValue))
         glVertexAttribPointer(GLuint(VertexAttributes.vertexAttribPosition.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(6 * MemoryLayout<GLfloat>.size), UnsafePointer<Int>(bitPattern:0))
         
@@ -57,14 +55,17 @@ class DemoGLKViewController: GLKViewController {
     
     // MARK: - Private Methods
     
+    private func setupShaders() {
+        baseEffect = BaseEffect(vertexShader: "SimpleVertex.glsl",
+                                fragmentShader: "SimpleFragment.glsl",
+                                attributes: [VertexAttributes.vertexAttribPosition: "a_Position",
+                                             VertexAttributes.vertexAttribColor: "a_Color"])
+    }
+    
     private func setupVertexBuffer() {
         glGenFramebuffers(1, &vertexBuffer)
         glBindBuffer(GLenum(GL_ARRAY_BUFFER), vertexBuffer)
         
         glBufferData(GLenum(GL_ARRAY_BUFFER), vertices.count * MemoryLayout<GLfloat>.size , vertices, GLenum(GL_STATIC_DRAW))
-    }
-    
-    private func setupShaders() {
-        baseEffect = BaseEffect(vertexShader: "SimpleVertex.glsl", fragmentShader: "SimpleFragment.glsl")
     }
 }
