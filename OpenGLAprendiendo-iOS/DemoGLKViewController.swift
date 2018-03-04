@@ -24,20 +24,12 @@ class DemoGLKViewController: GLKViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let glkView = view as! GLKView
-        
-        glkView.context = EAGLContext(api: EAGLRenderingAPI.openGLES2)!
-        
-        EAGLContext.setCurrent(glkView.context)
-        
-        setupShaders()
-        setupVertexBuffer()
+        setup()
     }
     
     // MARK: - GLKViewDelegate
     
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
-        glClearColor(0.2, 0.3, 0.3, 1.0)
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
         
         glEnableVertexAttribArray(GLuint(VertexAttributes.vertexAttribPosition.rawValue))
@@ -46,7 +38,6 @@ class DemoGLKViewController: GLKViewController {
         glEnableVertexAttribArray(GLuint(VertexAttributes.vertexAttribColor.rawValue))
         glVertexAttribPointer(GLuint(VertexAttributes.vertexAttribColor.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(6 * MemoryLayout<GLfloat>.size), UnsafePointer<Int>(bitPattern:(3 * MemoryLayout<GLfloat>.size)))
         
-        glBindBuffer(GLenum(GL_ARRAY_BUFFER), vertexBuffer)
         glDrawArrays(GLenum(GL_TRIANGLES), 0, 3)
         
         glDisableVertexAttribArray(GLuint(VertexAttributes.vertexAttribPosition.rawValue))
@@ -54,6 +45,21 @@ class DemoGLKViewController: GLKViewController {
     }
     
     // MARK: - Private Methods
+    
+    private func setup() {
+        let glkView = view as! GLKView
+        
+        glkView.context = EAGLContext(api: EAGLRenderingAPI.openGLES2)!
+        
+        EAGLContext.setCurrent(glkView.context)
+        
+        setupShaders()
+        setupVertexBuffer()
+        
+        glClearColor(0.2, 0.3, 0.3, 1.0)
+        
+        glBindBuffer(GLenum(GL_ARRAY_BUFFER), vertexBuffer)
+    }
     
     private func setupShaders() {
         baseEffect = BaseEffect(vertexShader: "SimpleVertex.glsl",
