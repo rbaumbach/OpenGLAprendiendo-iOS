@@ -1,7 +1,6 @@
-import UIKit
-import GLKit;
+import GLKit
 
-class DemoGLKViewController: GLKViewController {
+class SwiftGLKViewController: GLKViewController {
     // MARK: - Private Properties
     
     // ray wenderlich has triple nested arrays { {{ pointA }}, {{ PointB }}, {{ PointC }} }

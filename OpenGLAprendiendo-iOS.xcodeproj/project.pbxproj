@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */; };
 		94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */; };
-		94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */; };
+		94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */; };
 		94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7DE2045C21D005BF9DD /* Main.storyboard */; };
 		94E0E7E22045C21D005BF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E12045C21D005BF9DD /* Assets.xcassets */; };
 		94E0E7E52045C21D005BF9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */; };
@@ -20,9 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPlusPlusGLKViewController.swift; sourceTree = "<group>"; };
 		94E0E7D72045C21D005BF9DD /* OpenGLAprendiendo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLAprendiendo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGLKViewController.swift; sourceTree = "<group>"; };
+		94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGLKViewController.swift; sourceTree = "<group>"; };
 		94E0E7DF2045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E0E7E12045C21D005BF9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E0E7E42045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +70,8 @@
 			children = (
 				94E0E7F2204717AC005BF9DD /* Resources */,
 				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
-				94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */,
+				94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */,
+				948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */,
 				94E0E7DE2045C21D005BF9DD /* Main.storyboard */,
 				94E0E7E12045C21D005BF9DD /* Assets.xcassets */,
 				94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */,
@@ -170,10 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */,
+				94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */,
 				94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */,
 				94E0E7F4204717C5005BF9DD /* Vertex.swift in Sources */,
 				94E0E7FA20472158005BF9DD /* BaseEffect.swift in Sources */,
+				948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

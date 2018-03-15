@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKA-vf-YWn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jRK-fc-vFJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GLKit View Controller-->
+        <!--Swift Triangle-->
         <scene sceneID="Ru4-3n-UCI">
             <objects>
-                <glkViewController preferredFramesPerSecond="30" id="xKA-vf-YWn" customClass="DemoGLKViewController" customModule="OpenGLAprendiendo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <glkViewController preferredFramesPerSecond="30" id="xKA-vf-YWn" customClass="SwiftGLKViewController" customModule="OpenGLAprendiendo_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="caY-IJ-Ddw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,10 +22,47 @@
                             <outlet property="delegate" destination="xKA-vf-YWn" id="c78-kR-ILZ"/>
                         </connections>
                     </glkView>
+                    <tabBarItem key="tabBarItem" title="Swift Triangle" id="kuf-7K-9C7"/>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5Q-o6-upY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="42"/>
+            <point key="canvasLocation" x="172" y="-310"/>
+        </scene>
+        <!--C++ Triangle-->
+        <scene sceneID="ktZ-4C-nGj">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Sfh-ha-xxd" customClass="CPlusPlusGLKViewController" customModule="OpenGLAprendiendo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="bb4-qG-XB1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3vz-lt-qot"/>
+                        <connections>
+                            <outlet property="delegate" destination="Sfh-ha-xxd" id="ezf-QH-Yx5"/>
+                        </connections>
+                    </glkView>
+                    <tabBarItem key="tabBarItem" title="C++ Triangle" id="zZq-7M-eAB"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dy-vy-NeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="346"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="g2m-r0-CiJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jRK-fc-vFJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uFg-oF-vP3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xKA-vf-YWn" kind="relationship" relationship="viewControllers" id="55K-DW-D00"/>
+                        <segue destination="Sfh-ha-xxd" kind="relationship" relationship="viewControllers" id="OxN-Wl-yXW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHg-9I-ysq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-966.39999999999998" y="-70.164917541229386"/>
         </scene>
     </scenes>
 </document>
