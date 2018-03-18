@@ -1,6 +1,8 @@
 import GLKit
 
 class CPlusPlusGLKViewController: GLKViewController {
+    var triangleWrapper = TriangleWrapper()
+        
      // MARK: - GLKViewController
     
     override func viewDidLoad() {
@@ -12,7 +14,7 @@ class CPlusPlusGLKViewController: GLKViewController {
     // MARK: - GLKViewDelegate
     
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
-        glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
+        triangleWrapper.render()
     }
     
     // MARK: - Private Methods
@@ -24,6 +26,6 @@ class CPlusPlusGLKViewController: GLKViewController {
         
         EAGLContext.setCurrent(glkView.context)
         
-        glClearColor(0.2, 0.3, 0.3, 1.0)
+        triangleWrapper.setupTriangle()
     }
 }

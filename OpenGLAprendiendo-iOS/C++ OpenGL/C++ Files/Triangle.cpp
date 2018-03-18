@@ -1,16 +1,35 @@
 #include "Triangle.hpp"
 
-GLfloat triangleVertices[] = {
+GLfloat macOSTriangleVertices[] = {
     // positions          // colors
     0.5f, -0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   // bottom right
     -0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   // bottom left
     0.0f,  0.5f, 0.0f,    0.0f, 0.0f, 1.0f    // top
 };
 
-Triangle::Triangle() : shader("vertex.glsl", "fragment.glsl") {}
+GLfloat triangleVertices[] = {
+    // positions          // colors
+    0.5f, -0.25f, 0.0f,     1.0f, 0.0f, 0.0f,   // bottom right
+    -0.5, -0.25, 0.0,       0.0f, 1.0f, 0.0f,   // bottom left
+    0.0, 0.25, 0.0,         0.0f, 0.0f, 1.0f    // top
+};
+
+Triangle::Triangle(GLboolean isMacOS)
+{
+    this->isMacOS = isMacOS;
+}
 
 void Triangle::setup()
 {
+    if (isMacOS)
+    {
+        shaderManager.loadShadersFromPaths("vertex.glsl", "fragment.glsl");
+    }
+    else
+    {
+        shaderManager.loadHardcodedShaders();
+    }
+    
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
@@ -19,8 +38,18 @@ void Triangle::setup()
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleVertices), triangleVertices, GL_STATIC_DRAW);
+    
+    if(isMacOS)
+    {
+        glBufferData(GL_ARRAY_BUFFER, sizeof(macOSTriangleVertices), macOSTriangleVertices, GL_STATIC_DRAW);
 
+    }
+    else
+    {
+        glBufferData(GL_ARRAY_BUFFER, sizeof(triangleVertices), triangleVertices, GL_STATIC_DRAW);
+
+    }
+    
     // position attribute
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
@@ -52,7 +81,7 @@ void Triangle::render()
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    shader.useProgram();
+    shaderManager.useProgram();
 
     // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
     

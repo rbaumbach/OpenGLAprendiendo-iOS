@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94768065205EADA700DF5323 /* ShaderConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94768060205EADA700DF5323 /* ShaderConstants.cpp */; };
+		94768066205EADA700DF5323 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94768061205EADA700DF5323 /* ShaderManager.cpp */; };
+		94768067205EADA700DF5323 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94768063205EADA700DF5323 /* Triangle.cpp */; };
 		948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */; };
-		948A4642205B348400C62EF8 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948A463D205B348400C62EF8 /* Triangle.cpp */; };
-		948A4643205B348400C62EF8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948A463E205B348400C62EF8 /* Shader.cpp */; };
-		948A4644205B348400C62EF8 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 948A4640205B348400C62EF8 /* vertex.glsl */; };
-		948A4645205B348400C62EF8 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 948A4641205B348400C62EF8 /* fragment.glsl */; };
+		948A4648205C5EAB00C62EF8 /* TriangleWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */; };
 		94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */; };
 		94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */; };
 		94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7DE2045C21D005BF9DD /* Main.storyboard */; };
@@ -25,14 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9476805F205EADA700DF5323 /* Triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
+		94768060205EADA700DF5323 /* ShaderConstants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderConstants.cpp; sourceTree = "<group>"; };
+		94768061205EADA700DF5323 /* ShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
+		94768062205EADA700DF5323 /* ShaderManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderManager.hpp; sourceTree = "<group>"; };
+		94768063205EADA700DF5323 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		94768064205EADA700DF5323 /* ShaderConstants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderConstants.hpp; sourceTree = "<group>"; };
 		948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPlusPlusGLKViewController.swift; sourceTree = "<group>"; };
 		948A463B205B348300C62EF8 /* OpenGLAprendiendo-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLAprendiendo-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		948A463C205B348400C62EF8 /* Triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
-		948A463D205B348400C62EF8 /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
-		948A463E205B348400C62EF8 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
-		948A463F205B348400C62EF8 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
-		948A4640205B348400C62EF8 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
-		948A4641205B348400C62EF8 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleWrapper.mm; sourceTree = "<group>"; };
+		948A4649205C5EBC00C62EF8 /* TriangleWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleWrapper.h; sourceTree = "<group>"; };
 		94E0E7D72045C21D005BF9DD /* OpenGLAprendiendo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLAprendiendo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGLKViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94768068205EADB800DF5323 /* C++ Files */ = {
+			isa = PBXGroup;
+			children = (
+				94768060205EADA700DF5323 /* ShaderConstants.cpp */,
+				94768064205EADA700DF5323 /* ShaderConstants.hpp */,
+				94768061205EADA700DF5323 /* ShaderManager.cpp */,
+				94768062205EADA700DF5323 /* ShaderManager.hpp */,
+				94768063205EADA700DF5323 /* Triangle.cpp */,
+				9476805F205EADA700DF5323 /* Triangle.hpp */,
+			);
+			path = "C++ Files";
+			sourceTree = "<group>";
+		};
 		948A4639205B341C00C62EF8 /* Swift OpenGL */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,21 +89,28 @@
 		948A463A205B342800C62EF8 /* C++ OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				948A4641205B348400C62EF8 /* fragment.glsl */,
-				948A463E205B348400C62EF8 /* Shader.cpp */,
-				948A463F205B348400C62EF8 /* Shader.hpp */,
-				948A463D205B348400C62EF8 /* Triangle.cpp */,
-				948A463C205B348400C62EF8 /* Triangle.hpp */,
-				948A4640205B348400C62EF8 /* vertex.glsl */,
+				94768068205EADB800DF5323 /* C++ Files */,
 				948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */,
+				948A4649205C5EBC00C62EF8 /* TriangleWrapper.h */,
+				948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */,
 			);
 			path = "C++ OpenGL";
+			sourceTree = "<group>";
+		};
+		948A4646205C282F00C62EF8 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				948A463B205B348300C62EF8 /* OpenGLAprendiendo-iOS-Bridging-Header.h */,
+				94E0E7E62045C21D005BF9DD /* Info.plist */,
+			);
+			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 		94E0E7CE2045C21D005BF9DD = {
 			isa = PBXGroup;
 			children = (
 				94E0E7D92045C21D005BF9DD /* OpenGLAprendiendo-iOS */,
+				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
 				94E0E7D82045C21D005BF9DD /* Products */,
 				94E0E7EF2045C394005BF9DD /* Frameworks */,
 			);
@@ -106,10 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				948A463A205B342800C62EF8 /* C++ OpenGL */,
-				948A4639205B341C00C62EF8 /* Swift OpenGL */,
 				94E0E7F2204717AC005BF9DD /* Resources */,
-				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
-				948A463B205B348300C62EF8 /* OpenGLAprendiendo-iOS-Bridging-Header.h */,
+				948A4646205C282F00C62EF8 /* Supporting FIles */,
+				948A4639205B341C00C62EF8 /* Swift OpenGL */,
 			);
 			path = "OpenGLAprendiendo-iOS";
 			sourceTree = "<group>";
@@ -128,7 +149,6 @@
 				94E0E7DE2045C21D005BF9DD /* Main.storyboard */,
 				94E0E7E12045C21D005BF9DD /* Assets.xcassets */,
 				94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */,
-				94E0E7E62045C21D005BF9DD /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,9 +216,7 @@
 				94E0E7E52045C21D005BF9DD /* LaunchScreen.storyboard in Resources */,
 				94E0E7F620471871005BF9DD /* SimpleVertex.glsl in Resources */,
 				94E0E7E22045C21D005BF9DD /* Assets.xcassets in Resources */,
-				948A4644205B348400C62EF8 /* vertex.glsl in Resources */,
 				94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */,
-				948A4645205B348400C62EF8 /* fragment.glsl in Resources */,
 				94E0E7F820471881005BF9DD /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,11 +229,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */,
-				948A4642205B348400C62EF8 /* Triangle.cpp in Sources */,
 				94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */,
+				94768065205EADA700DF5323 /* ShaderConstants.cpp in Sources */,
+				948A4648205C5EAB00C62EF8 /* TriangleWrapper.mm in Sources */,
+				94768066205EADA700DF5323 /* ShaderManager.cpp in Sources */,
 				94E0E7F4204717C5005BF9DD /* Vertex.swift in Sources */,
-				948A4643205B348400C62EF8 /* Shader.cpp in Sources */,
 				94E0E7FA20472158005BF9DD /* BaseEffect.swift in Sources */,
+				94768067205EADA700DF5323 /* Triangle.cpp in Sources */,
 				948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,12 +376,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Info.plist";
+				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rkb.OpenGLAprendiendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/C++ OpenGL/OpenGLAprendiendo-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/Supporting Files/OpenGLAprendiendo-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,12 +395,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Info.plist";
+				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rkb.OpenGLAprendiendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/C++ OpenGL/OpenGLAprendiendo-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/Supporting Files/OpenGLAprendiendo-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

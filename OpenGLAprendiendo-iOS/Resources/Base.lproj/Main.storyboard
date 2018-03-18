@@ -52,11 +52,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jRK-fc-vFJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uFg-oF-vP3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xKA-vf-YWn" kind="relationship" relationship="viewControllers" id="55K-DW-D00"/>
+                        <segue destination="xKA-vf-YWn" kind="relationship" relationship="viewControllers" id="3Rm-t4-bB9"/>
                         <segue destination="Sfh-ha-xxd" kind="relationship" relationship="viewControllers" id="OxN-Wl-yXW"/>
                     </connections>
                 </tabBarController>
