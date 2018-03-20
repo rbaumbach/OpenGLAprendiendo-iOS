@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */; };
+		948A4648205C5EAB00C62EF8 /* TriangleWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */; };
 		94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */; };
-		94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */; };
+		94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */; };
 		94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7DE2045C21D005BF9DD /* Main.storyboard */; };
 		94E0E7E22045C21D005BF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E12045C21D005BF9DD /* Assets.xcassets */; };
 		94E0E7E52045C21D005BF9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */; };
@@ -17,12 +19,20 @@
 		94E0E7F620471871005BF9DD /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7F520471871005BF9DD /* SimpleVertex.glsl */; };
 		94E0E7F820471881005BF9DD /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7F720471881005BF9DD /* SimpleFragment.glsl */; };
 		94E0E7FA20472158005BF9DD /* BaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7F920472158005BF9DD /* BaseEffect.swift */; };
+		C181BF058A0BDD0622FA237C /* Pods_OpenGLAprendiendo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DCCD5BC1C37A994A6D5FF9 /* Pods_OpenGLAprendiendo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2105B1755B53826ADB3357C8 /* Pods-OpenGLAprendiendo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGLAprendiendo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenGLAprendiendo-iOS/Pods-OpenGLAprendiendo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6C367B6A9D9D04D6E1A6C968 /* Pods-OpenGLAprendiendo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenGLAprendiendo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenGLAprendiendo-iOS/Pods-OpenGLAprendiendo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		85DCCD5BC1C37A994A6D5FF9 /* Pods_OpenGLAprendiendo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenGLAprendiendo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPlusPlusGLKViewController.swift; sourceTree = "<group>"; };
+		948A463B205B348300C62EF8 /* OpenGLAprendiendo-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLAprendiendo-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleWrapper.mm; sourceTree = "<group>"; };
+		948A4649205C5EBC00C62EF8 /* TriangleWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleWrapper.h; sourceTree = "<group>"; };
 		94E0E7D72045C21D005BF9DD /* OpenGLAprendiendo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLAprendiendo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGLKViewController.swift; sourceTree = "<group>"; };
+		94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGLKViewController.swift; sourceTree = "<group>"; };
 		94E0E7DF2045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E0E7E12045C21D005BF9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E0E7E42045C21D005BF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,18 +50,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E0E7F12045C395005BF9DD /* OpenGLES.framework in Frameworks */,
+				C181BF058A0BDD0622FA237C /* Pods_OpenGLAprendiendo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		948A4639205B341C00C62EF8 /* Swift OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				94E0E7F720471881005BF9DD /* SimpleFragment.glsl */,
+				94E0E7F520471871005BF9DD /* SimpleVertex.glsl */,
+				94E0E7F3204717C5005BF9DD /* Vertex.swift */,
+				94E0E7F920472158005BF9DD /* BaseEffect.swift */,
+				94E0E7DC2045C21D005BF9DD /* SwiftGLKViewController.swift */,
+			);
+			path = "Swift OpenGL";
+			sourceTree = "<group>";
+		};
+		948A463A205B342800C62EF8 /* C++ OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				948A4637205B19B500C62EF8 /* CPlusPlusGLKViewController.swift */,
+				948A4649205C5EBC00C62EF8 /* TriangleWrapper.h */,
+				948A4647205C5EAB00C62EF8 /* TriangleWrapper.mm */,
+			);
+			path = "C++ OpenGL";
+			sourceTree = "<group>";
+		};
+		948A4646205C282F00C62EF8 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				948A463B205B348300C62EF8 /* OpenGLAprendiendo-iOS-Bridging-Header.h */,
+				94E0E7E62045C21D005BF9DD /* Info.plist */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
 		94E0E7CE2045C21D005BF9DD = {
 			isa = PBXGroup;
 			children = (
 				94E0E7D92045C21D005BF9DD /* OpenGLAprendiendo-iOS */,
+				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
 				94E0E7D82045C21D005BF9DD /* Products */,
 				94E0E7EF2045C394005BF9DD /* Frameworks */,
+				9553C4A9E809B7B4199C036B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,13 +110,10 @@
 		94E0E7D92045C21D005BF9DD /* OpenGLAprendiendo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				948A463A205B342800C62EF8 /* C++ OpenGL */,
 				94E0E7F2204717AC005BF9DD /* Resources */,
-				94E0E7DA2045C21D005BF9DD /* AppDelegate.swift */,
-				94E0E7DC2045C21D005BF9DD /* DemoGLKViewController.swift */,
-				94E0E7DE2045C21D005BF9DD /* Main.storyboard */,
-				94E0E7E12045C21D005BF9DD /* Assets.xcassets */,
-				94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */,
-				94E0E7E62045C21D005BF9DD /* Info.plist */,
+				948A4646205C282F00C62EF8 /* Supporting FIles */,
+				948A4639205B341C00C62EF8 /* Swift OpenGL */,
 			);
 			path = "OpenGLAprendiendo-iOS";
 			sourceTree = "<group>";
@@ -81,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				94E0E7F02045C395005BF9DD /* OpenGLES.framework */,
+				85DCCD5BC1C37A994A6D5FF9 /* Pods_OpenGLAprendiendo_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,12 +130,20 @@
 		94E0E7F2204717AC005BF9DD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				94E0E7F720471881005BF9DD /* SimpleFragment.glsl */,
-				94E0E7F520471871005BF9DD /* SimpleVertex.glsl */,
-				94E0E7F3204717C5005BF9DD /* Vertex.swift */,
-				94E0E7F920472158005BF9DD /* BaseEffect.swift */,
+				94E0E7DE2045C21D005BF9DD /* Main.storyboard */,
+				94E0E7E12045C21D005BF9DD /* Assets.xcassets */,
+				94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9553C4A9E809B7B4199C036B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C367B6A9D9D04D6E1A6C968 /* Pods-OpenGLAprendiendo-iOS.debug.xcconfig */,
+				2105B1755B53826ADB3357C8 /* Pods-OpenGLAprendiendo-iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94E0E7E92045C21D005BF9DD /* Build configuration list for PBXNativeTarget "OpenGLAprendiendo-iOS" */;
 			buildPhases = (
+				2FBF4379A70A85A4FA8B244F /* [CP] Check Pods Manifest.lock */,
 				94E0E7D32045C21D005BF9DD /* Sources */,
 				94E0E7D42045C21D005BF9DD /* Frameworks */,
 				94E0E7D52045C21D005BF9DD /* Resources */,
+				CA3C25729C7E3D38E191AF91 /* [CP] Embed Pods Frameworks */,
+				0FFB3824CC80DA9B7D5E7BF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +181,7 @@
 				TargetAttributes = {
 					94E0E7D62045C21D005BF9DD = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -165,15 +219,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FFB3824CC80DA9B7D5E7BF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenGLAprendiendo-iOS/Pods-OpenGLAprendiendo-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FBF4379A70A85A4FA8B244F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenGLAprendiendo-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3C25729C7E3D38E191AF91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenGLAprendiendo-iOS/Pods-OpenGLAprendiendo-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenGLAprendiendo/OpenGLAprendiendo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenGLAprendiendo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenGLAprendiendo-iOS/Pods-OpenGLAprendiendo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94E0E7D32045C21D005BF9DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E0E7DD2045C21D005BF9DD /* DemoGLKViewController.swift in Sources */,
+				94E0E7DD2045C21D005BF9DD /* SwiftGLKViewController.swift in Sources */,
 				94E0E7DB2045C21D005BF9DD /* AppDelegate.swift in Sources */,
+				948A4648205C5EAB00C62EF8 /* TriangleWrapper.mm in Sources */,
 				94E0E7F4204717C5005BF9DD /* Vertex.swift in Sources */,
 				94E0E7FA20472158005BF9DD /* BaseEffect.swift in Sources */,
+				948A4638205B19B500C62EF8 /* CPlusPlusGLKViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +418,19 @@
 		};
 		94E0E7EA2045C21D005BF9DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C367B6A9D9D04D6E1A6C968 /* Pods-OpenGLAprendiendo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Info.plist";
+				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rkb.OpenGLAprendiendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/Supporting Files/OpenGLAprendiendo-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,15 +438,18 @@
 		};
 		94E0E7EB2045C21D005BF9DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2105B1755B53826ADB3357C8 /* Pods-OpenGLAprendiendo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Info.plist";
+				INFOPLIST_FILE = "OpenGLAprendiendo-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rkb.OpenGLAprendiendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenGLAprendiendo-iOS/Supporting Files/OpenGLAprendiendo-iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,7 +1,6 @@
-import UIKit
-import GLKit;
+import GLKit
 
-class DemoGLKViewController: GLKViewController {
+class SwiftGLKViewController: GLKViewController {
     // MARK: - Private Properties
     
     // ray wenderlich has triple nested arrays { {{ pointA }}, {{ PointB }}, {{ PointC }} }
@@ -49,7 +48,7 @@ class DemoGLKViewController: GLKViewController {
     private func setup() {
         let glkView = view as! GLKView
         
-        glkView.context = EAGLContext(api: EAGLRenderingAPI.openGLES2)!
+        glkView.context = EAGLContext(api: EAGLRenderingAPI.openGLES3)!
         
         EAGLContext.setCurrent(glkView.context)
         
