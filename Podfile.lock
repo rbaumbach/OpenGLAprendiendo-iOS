@@ -1,0 +1,12 @@
+PODS:
+  - OpenGLAprendiendo (0.1.0)
+
+DEPENDENCIES:
+  - OpenGLAprendiendo
+
+SPEC CHECKSUMS:
+  OpenGLAprendiendo: ae8a0d19ae40b6387e3bc000568e983de5622661
+
+PODFILE CHECKSUM: b5e35d3c403287b7d3fc8a97d7d0b4d9533a96a5
+
+COCOAPODS: 1.4.0

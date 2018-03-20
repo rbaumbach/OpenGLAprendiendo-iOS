@@ -1,5 +1,5 @@
 #import "TriangleWrapper.h"
-#import "Triangle.hpp"
+#import <OpenGLAprendiendo/Triangle.hpp>
 
 @implementation TriangleWrapper {
     Triangle *_triangle;
