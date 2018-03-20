@@ -5,5 +5,5 @@ platform :ios, '11.2'
 target 'OpenGLAprendiendo-iOS' do
   use_frameworks!
 
-  pod 'OpenGLAprendiendo'
+  pod 'OpenGLAprendiendo', '0.1.1'
 end
