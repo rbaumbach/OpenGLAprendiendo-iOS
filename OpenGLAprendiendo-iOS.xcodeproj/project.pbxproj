@@ -14,7 +14,6 @@
 		94E0E7E02045C21D005BF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7DE2045C21D005BF9DD /* Main.storyboard */; };
 		94E0E7E22045C21D005BF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E12045C21D005BF9DD /* Assets.xcassets */; };
 		94E0E7E52045C21D005BF9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7E32045C21D005BF9DD /* LaunchScreen.storyboard */; };
-		94E0E7F12045C395005BF9DD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E0E7F02045C395005BF9DD /* OpenGLES.framework */; };
 		94E0E7F4204717C5005BF9DD /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E0E7F3204717C5005BF9DD /* Vertex.swift */; };
 		94E0E7F620471871005BF9DD /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7F520471871005BF9DD /* SimpleVertex.glsl */; };
 		94E0E7F820471881005BF9DD /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 94E0E7F720471881005BF9DD /* SimpleFragment.glsl */; };
@@ -49,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94E0E7F12045C395005BF9DD /* OpenGLES.framework in Frameworks */,
 				C181BF058A0BDD0622FA237C /* Pods_OpenGLAprendiendo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
